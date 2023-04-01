@@ -52,17 +52,46 @@ body {
   background-image: url("../public/images/IMG-20220227-WA0001.jpg");
 }
 
-.MainContent {
-  font-size: 2rem;
+.Image3 {
+  background-image: url("../public/images/IMG-20220227-WA0002.jpg");
+}
+
+.Image4 {
+  background-image: url("../public/images/IMG-20220227-WA0021.jpg");
+}
+
+.ParallaxHeader {
+  font-size: 3rem;
   padding: 2rem;
   background-color: #333;
   color: white;
+  min-height: 10vh;
+  max-height: 30vh;
+  text-align: center;
+  font-family: 'Noto Sans Mono', monospace;
+}
+
+.MainContent {
+  font-size: 3rem;
+  padding: 2rem;
+  background-color: #333;
+  color: white;
+  min-height: 40vh;
+  max-height: 60vh;
+  text-align: center;
+  font-family: 'Noto Sans Mono', monospace;
 }
 
 .PadHeader {
   padding-top: 1300px;
 }
 
+
+.ProjectImage {
+  width: 100%;
+  max-height: 80vh;
+  object-fit: cover;
+}
 .navbar-brand {
   text-align: center;
 }
