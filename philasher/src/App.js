@@ -27,8 +27,13 @@ function TheNavBar(){
 
 function ProjectCarousel(){
   return (
-    <Carousel bg="dark" variant="dark">
+    <Carousel bg="dark" variant="light">
       <Carousel.Item>
+        <img
+            className="BackgroundImage"
+            src="images\IMG-20220227-WA0019 crop.jpg"
+            alt="First slide"
+        />
         <img
             className="ProjectImage"
             src="images\IMG-20220227-WA0019.jpg"
@@ -41,6 +46,10 @@ function ProjectCarousel(){
       </Carousel.Item>
       <Carousel.Item>
         <img
+            className="BackgroundImage"
+            src="images\IMG-20220227-WA0007 crop.jpg"
+            alt="Second slide"
+        /><img
             className="ProjectImage"
             src="images\IMG-20220227-WA0007.jpg"
             alt="Second slide"
@@ -59,10 +68,12 @@ function App() {
   return (
     <div className="App">
       <TheNavBar/>
-      <section className='ParallaxImage Image1'></section>
+      <section className='ParallaxImage Image1' id='about'></section>
       <section>
-        <div className='ParallaxHeader'>
-          <p><b>Bespoke building work & Joinery</b></p>
+        <div className='MainContent'>
+          <h2><b>About</b></h2>
+          <p>A self-employed builder with decades of experience.<br/>Services ranging from simple repairs, to kitchen fittings, to even bespoke building projects.<br/>Based in Lymm, operating within the Cheshire - South Manchester Area</p>
+          <br/>
         </div>
       </section>
       <section className='ParallaxImage Image2'></section>
@@ -79,9 +90,9 @@ function App() {
       </section>
       <section className='ParallaxImage Image4'></section>
       <section>
-        <div className='MainContent' id='about'>
-          <h2><b>About</b></h2>
-          <p>A self-employed builder with decades of experience.<br/>Services ranging from simple repairs, to kitchen fittings, to even bespoke building projects.<br/>Based in Lymm, operating within the Cheshire - South Manchester Area</p>
+        <div className='ParallaxHeader' id='projects'>
+          <h2><b>Projects</b></h2>
+          <p>A small sample of my recent jobs</p>
           <br/>
         </div>
       </section>
